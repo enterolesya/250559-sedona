@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
       
@@ -16,14 +17,14 @@
           </ul>
           
           <div class="page-header__logo">
-              <a class="page-header__link" href="index.html"><img class="page-header__image" src="img/logo.png"></a>
+              <a class="page-header__link" href="index.html"><img class="page-header__image" src="icons/logo.png"></a>
           </div>
       </header>
       
       
       <section class="intro">
           
-          <img src="img/background_photo.jpg" class="intro__image">
+          <img src="img/background_photo.jpg" class="intro__image" height="508" width="1200" alt="Седона">
           
       </section>
       
@@ -47,7 +48,7 @@
           </div> 
           <div class="features__image">
               
-              <img src="img/real_town.jpg">
+              <img src="img/real_town.jpg" height="256" width="800" alt="Настоящий городок">
               
           </div>
           
@@ -58,7 +59,7 @@
           
           <div class="advantages__item">
               
-              <img src="img/house.png" class="advantages__image">
+              <img src="icons/house.png" class="advantages__image">
               <h2 class="advantages__heading">Жилье</h2>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               
@@ -66,7 +67,7 @@
           
           <div class="advantages__item">
               
-              <img src="img/burger.png" class="advantages__image">  
+              <img src="icons/burger.png" class="advantages__image">  
               <h2 class="advantages__heading">Еда</h2>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               
@@ -74,7 +75,7 @@
           
           <div class="advantages__item">
               
-              <img src="img/surprise.png" class="advantages__image">
+              <img src="icons/surprise.png" class="advantages__image">
               <h2 class="advantages__heading">Сувениры</h2>
               <p>Не только китайского, но и местного производства!</p>
               
@@ -87,7 +88,7 @@
           
           <div class="features__image">
               
-              <img src="img/devil_bridge.jpg">
+              <img src="img/devil_bridge.jpg" height="256" width="800" alt="Мост дьявола">
               
           </div>
           
@@ -142,13 +143,15 @@
       
       <section class="form">
 
-          <form class="map__form">
+          <form class="map__form" action="https://echo.htmlacademy.ru" method="get">
               <label>Дата заезда:<input class="form__input" type="date"></label>
               <label>Дата выезда:<input class="form__input" type="date"></label>
               <input class="form__buttom" type="submit" value="Найти"></input>
           </form>
-          <img class="map__image" src="img/map.jpg">
-      
+		  
+		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135625626535!2d-111.83015816643645!3d34.85444386572116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1477496844041" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen>Ваш браузер не поддерживает плавающие фреймы!
+		  </iframe>
+          <img class="map__image" src="img/map.jpg" height="593" width="1200" alt="Карта">
       
       </section>
     
@@ -160,15 +163,15 @@
           </div>
           
           <div class="footer__social">
-              <a class="footer__social-item footer__social-item--tw"><img src="img/twitter.png"></a>
-              <a class="footer__social-item footer__social-item--fb"><img src="img/facebook.png"></a>
-              <a class="footer__social-item footer__social-item--yt"><img src="img/youtube.png"></a>
+              <a class="footer__social-item footer__social-item--tw"><img src="icons/twitter.png"></a>
+              <a class="footer__social-item footer__social-item--fb"><img src="icons/facebook.png"></a>
+              <a class="footer__social-item footer__social-item--yt"><img src="icons/youtube.png"></a>
           </div>
           
           <div class="footer__copyright">
-              <a class="footer__copyright-link" href="#">
+              <a class="footer__copyright-link" href="https://htmlacademy.ru">
                   <span class="footer__copyright-text">Website by </span>
-                  <img class="footer__copyright-image" src="img/html_academy.png">
+                  <img class="footer__copyright-image" src="icons/html_academy.png">
               </a>
           </div>
           
