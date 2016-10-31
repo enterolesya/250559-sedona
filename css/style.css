@@ -172,6 +172,112 @@ body{
 	background-color: #81b3d2;
 }
 
+/* Здесь стили по catalog.html */
+
+.form-catalog{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-image: url(../img/filter_background.jpg);
+	align-items: center;
+	height: 215px;
+}
+.form-catalog__item{
+	display: flex;
+	flex-direction: column;
+	color: #ffffff;
+}
+
+.form-catalog__item:first-child{
+	min-width: 255px;
+}
+.form-catalog__item:nth-child(2){
+	min-width: 270px;
+	margin-left: 0px;
+	margin-right: 203px;
+}
+.form-catalog__item:nth-child(3){
+	min-width: 328px;
+}
+.form-catalog__button{
+	width: 138px;
+	height: 36px;
+	align-self: center;
+	border: 2px solid #ffffff;
+	
+}
+.finder{
+	display: flex;
+	flex-direction: row;
+	height: 86px;
+	background-color: #ffffff;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+.finder__name{
+	margin-left: 72px;
+}
+.finder__feature{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+.finder__items{
+	display: flex;
+	flex-direction: row;
+}
+.finder__item{
+	margin-left: 32px;
+}
+.hotel{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	background-color: #ffffff;
+}
+.hotel__image{
+	width: 165px;
+}
+.hotel__description{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90px;
+	width: 780px;
+}
+.hotel__heading{
+	margin: 0;
+}
+.hotel__features{
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+}
+.hotel__feature{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hotel__detail-link{
+	width: 110px;
+	height: 26px;
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-align: center;
+}
+.hotel__rent-link{
+	width: 142px;
+	height: 26px;
+	background-color: #766357;
+	color: #ffffff;
+	text-align: center;	
+}
+.hotel__rating{
+	width: 111px;
+}
 p{
 	text-align: center;
 }
