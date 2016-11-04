@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 *{
 	box-sizing: border-box;
 }
 
 body{
     font-size: 14px;
-    font-family: "PT Sans", sans-serif;
-    font-weight: normal;
+    font-family: 'PT Sans', Arial, sans-serif;
+	text-transform: uppercase;
     color: #333333;
     line-height: 21px;
 	background-color: #f1f1f1;
@@ -23,6 +24,7 @@ body{
 	top: 0;
 	left: 50%;
 	margin-left: -68px;
+	z-index: 3;
 }
 
 .menu{
@@ -39,48 +41,85 @@ body{
 
 .menu__item{
 	width: 240px;
+	align-items: flex-end;
 	padding-left: 72px;
 }
 
 .menu__item:nth-child(2){
 	margin-right: 240px; 
 } 
+.menu__item:nth-child(3){
+	padding-left: 81px;
+}
+.menu__item:last-child{
+	padding-left: 89px;
+}
 
 .intro{
 	margin: 0px;
 	padding: 0px;
+	font-size: 0;
+	line-height: 0;
+	position:relative;
 }
-
+.intro::before {  
+	background: url(../icons/teeth.png); 
+	content:"";
+	display:block;
+	position:absolute;
+	bottom: 0;
+	width:1200px;
+	height: 57px;
+}
 .information{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 62px;
+	padding-left: 355px;
+	padding-right: 355px;
+	text-align: center;
+	padding-top: 38px;
+	line-height: 24px;
 	height: 216px;
 	margin: 0px;
 	background-color: #ffffff;
+}
+.information p{
+	
 }
 
 .features{
 	display: flex;
 	flex-direction: row;
-	height: 256px;
-	min-width: 400px;
 	align-content: center;
+	
 }
 .features__item{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 54px;
-	padding-left: 60px;
-	padding-right: 60px;
+	width: 401px;
+	padding-top: 31px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border: 1px solid black;
+}
+.features__item:first-child p{
+	padding-left: 20px;
+	padding-right: 25px;
 }
 .features__heading{
-	flex-basis: 28px;
+	padding-left: 80px;
+	padding-right: 85px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+.features__item p{
+	padding-top: 7px;
 }
 .features__image{
-	min-width: 800px;
+	display: block;
+	width: 800px;
 }
 .features--blue{
 	background-color: #81b3d2;
@@ -93,16 +132,37 @@ body{
 	flex-direction: row;
 }
 
+.advantages__heading h2::before{
+	content: "";
+	display: block;
+	background: url(../img/spritesheet.png) no-repeat;
+}
+.advantages__image-house{
+	width: 75px;
+    height: 72px;
+    background-position: -109px -5px;
+}
+.advantages__image-food{
+	width: 74px;
+    height: 70px;
+    background-position: -5px -5px;
+}
+.advantages__image-surprise{
+    width: 64px;
+    height: 76px;
+    background-position: -317px -5px;
+}
+
 .advantages__item{
 	display: flex;
 	flex-direction: column;
+  	justify-content: center;
 	align-items: center;
 	background-color: #ffffff;
-	padding-left: 73px;
-	padding-right: 73px;
+	padding-left: 58px;
+	padding-right: 53px;
 	flex-basis: 400px;
 	height: 330px;
-	justify-content: center;
 }
 
 .promo{
@@ -123,7 +183,14 @@ body{
 	text-align: center;
 	padding-top: 30px;
 }
-
+h3{
+	font-size: 29px;
+	font-weight: 1500; 
+}
+.promo p{
+	padding-left: 200px;
+	padding-right: 200px;
+}
 .form{
 	display: flex;
 	flex-direction: column;
@@ -156,12 +223,16 @@ body{
 	height: 120px;
 	background-color: #ffffff;
 	opacity: 0.7;
+	border: 1px solid black;
 }
-
+.footer__hashtag{
+	font-size: 21px;
+	padding: 22px;
+}
 .footer__social{
 	display: flex;
 	flex-direction: row;
-	
+	margin-left: 18px;
 }
 
 .footer__social-item{
@@ -170,6 +241,18 @@ body{
 	margin-right: 6px;
 	justify-content: center;
 	background-color: #81b3d2;
+}
+.footer__social-item--fb{
+	padding-left: 3px;
+}
+.footer__social-img{
+	padding-left: 13px;
+	padding-top: 13px;
+}
+.footer__copyright{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 /* Здесь стили по catalog.html */
@@ -237,9 +320,11 @@ body{
 	align-items: center;
 	height: 150px;
 	background-color: #ffffff;
+	border: 1px solid green;
 }
 .hotel__image{
 	width: 165px;
+	border: 1px solid black;
 }
 .hotel__description{
 	display: flex;
@@ -247,6 +332,7 @@ body{
 	justify-content: space-between;
 	height: 90px;
 	width: 780px;
+	border: 1px solid black;
 }
 .hotel__heading{
 	margin: 0;
