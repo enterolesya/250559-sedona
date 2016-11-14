@@ -10,7 +10,7 @@
       <div class="main-container">
       <header class="page-header">
           <ul class="menu">
-              <li class="menu__item"><a class="menu__link" href="#">Информация</a></li>
+              <li class="menu__item"><a class="menu__link menu__link--active" href="#">Информация</a></li>
               <li class="menu__item"><a class="menu__link" href="#">Фото и видео</a></li> 
               <li class="menu__item"><a class="menu__link" href="#">Карта штата</a></li>
               <li class="menu__item"><a class="menu__link" href="catalog.html">Гостиницы</a></li>
@@ -24,14 +24,14 @@
       
       <section class="intro">
           
-          <img src="img/background_photo.jpg" class="intro__image" height="508" width="100%" alt="Седона">
+          <img src="img/background_photo.jpg" class="intro__image" height="508" width="1200" alt="Седона">
          
       </section>
       
       
       <section class="information">
           
-          <h2 class="information__heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="information__heading">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           
       </section>
@@ -42,8 +42,8 @@
           <div class="features__item">
               
               <h2 class="features__heading">Настоящий городок</h2>
-              <span class="features__number">- №1 -</span>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <span class="features__number">&ndash; №1 &ndash;</span>
+              <p>Седона &ndash; не аттракцион для туристов, там течет своя жизнь</p>
               
           </div> 
           <div class="">
@@ -92,7 +92,7 @@
           <div class="features__item">
               
               <h2 class="features__heading">Там есть мост дьявола</h2>
-              <span class="features__number">- №2 -</span>
+              <span class="features__number">&ndash; №2 &ndash;</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               
           </div>
@@ -105,23 +105,23 @@
           <div class="features__item">
               
               <h2 class="features__heading">Небольшая площадь</h2>
-              <span class="features__number">- №3 -</span>
-              <p>Все достопримечательности находятся очень близко</p>
+              <span class="features__number">&ndash; №3 &ndash;</span>
+              <p class="little-square">Все достопримечательности находятся очень близко</p>
             
           </div>
           
           <div class="features__item">
               
               <h2 class="features__heading">Красивая дорога</h2>
-              <span class="features__number">- №4 -</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <span class="features__number">&ndash; №4 &ndash;</span>
+              <p class="beautiful-road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               
           </div>
           
           <div class="features__item">
               
               <h2 class="features__heading">Мало туристов</h2>
-              <span class="features__number">- №5 -</span>
+              <span class="features__number">&ndash; №5 &ndash;</span>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
               
           </div>
@@ -132,7 +132,7 @@
       <section class="promo">
           
           <h3 class="promo__heading">Заинтересовались?</h3>
-          <p>Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="promo__link" href="catalog.html">Поиск гостиницы в Седоне</a>
           
       </section>
@@ -141,14 +141,43 @@
       <section class="form">
 
           <form class="map__form" action="https://echo.htmlacademy.ru" method="get">
-              <label>Дата заезда:<input class="form__input" type="date"></label>
-              <label>Дата выезда:<input class="form__input" type="date"></label>
-              <input class="form__buttom" type="submit" value="Найти"></input>
+			  
+			  <div class="form__things form__date">
+              	  <label class="form-index__label">Дата заезда:</label>
+			  	  <input type="text" placeholder="24 апреля 2016">
+				  <a href="#" class="form__calender"></a>
+			  </div>
+			  
+			  <div class="form__things form__date">
+              	  <label class="form-index__label">Дата выезда:</label>
+				  <input type="text" placeholder="4 июля 2016">
+				  <a href="#" class="form__calender"></a>
+			  </div>
+			  <div class="form__things form__grow">
+			  	  <div class="form__adult">
+			  	  	  <label class="form-adult__label">Взрослые:</label>
+					  <div class="form__checking">
+					  	  <span class="form__checking-item form__number">&ndash;</span>
+					  	  <span class="form__checking-item">2</span>
+					      <span class="form__checking-item form__number">+</span>
+					  </div>
+			  	  </div>
+			  	  <div class="form__child">
+			  	  	  <label class="form-child__label">Дети:</label>
+				      <div class="form__checking">
+					  	  <span class="form__checking-item form__number">&ndash;</span>
+					  	  <span class="form__checking-item">0</span>
+					      <span class="form__checking-item form__number">+</span>
+					  </div>
+			  	  </div>
+			  </div>
+			  <div class="form__things">
+              	  <input class="form__buttom" type="submit" value="Найти">
+			  </div>
           </form>
 		  
-		  <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135625626535!2d-111.83015816643645!3d34.85444386572116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1477496844041" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen>Ваш браузер не поддерживает плавающие фреймы!
-		  </iframe>
-          <img class="map__image" src="img/map.jpg" height="593" width="100%" alt="Карта">
+		<!--  <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135625626535!2d-111.83015816643645!3d34.85444386572116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1477496844041" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen>Ваш браузер не поддерживает плавающие фреймы!
+		  </iframe>  -->
       
       </section>
     
@@ -160,16 +189,16 @@
           </div>
           
           <div class="footer__social">
-              <a class="footer__social-item footer__social-item--tw"><img class="footer__social-img" src="icons/twitter.png"></a>
-              <a class="footer__social-item footer__social-item--fb"><img class="footer__social-img" src="icons/facebook.png"></a>
-              <a class="footer__social-item footer__social-item--yt"><img  class="footer__social-img" src="icons/youtube.png"></a>
+              <a href="https://twitter.com/htmlacademy_ru" class=" footer__social-item footer__social-item--tw"><div class="tw-overlay"></div></a>
+              <a href="https://www.facebook.com/htmlacademy/" class="footer__social-item footer__social-item--fb"></a>
+              <a href="https://www.youtube.com/user/htmlacademyru" class="footer__social-item footer__social-item--yt"></a>
           </div>
           
           <div class="footer__copyright">
-              <a class="footer__copyright-link" href="https://htmlacademy.ru">
-                  <span class="footer__copyright-text">Website by </span>
-                  <img class="footer__copyright-image" src="icons/html_academy.png">
-              </a>
+              <a class="footer__copyright-item footer__copyright-link" href="https://htmlacademy.ru">
+			  
+			  <span class="footer__copyright-item footer__copyright-text">Website by </span>
+			  </a>
           </div>
           
       </footer>
