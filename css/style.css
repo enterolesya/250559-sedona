@@ -269,9 +269,11 @@ h3{
 height: 100%;
 	width: 100%;
 }
-
+.form__image--remove{
+	background: none;
+}
 .map__form{
-	display: flex;
+	display: none;
 	flex-direction: column;
 	position: relative;
 	padding-top: 29px;
@@ -281,6 +283,10 @@ height: 100%;
   margin-bottom: 101px;
 	width: 567px;
 	background-color: #ffffff;
+}
+
+.map__form--open{
+	display: flex;
 }
 .form-index__label{
 	font-size: 14px;
@@ -504,7 +510,6 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 	display: flex;
 	flex-direction: column;
 	color: #ffffff;
-	border: 1px solid white;
 }
 
 .form-catalog__price {
@@ -794,13 +799,11 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 	justify-content: flex-end;
 	margin-bottom: 50px;
 	margin-left: 24px;
-		border: 1px solid black;
 }
 .hotel__star{
   width: 17px;
   height: 18px;
 	margin-right: 7px;
-	border: 1px solid black;
 	background: url(../img/spritesheet1.png) -127px -15px;
 }
 .hotel__vote{
