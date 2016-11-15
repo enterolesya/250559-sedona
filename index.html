@@ -203,22 +203,22 @@
           
       </footer>
     </div>
+     
 	<script>
-		var link = document.querySelector(".promo__link");	
-		var popup = document.querySelector(".map__form");
-		var map = document.querySelector("iframe");
-		var image-form = document.querySelector(".form");
-		
-		link.addEventListener("click", function(event){
-			event.preventDefault();
-			popup.classList.add("map__form--open");
-		});
-		
+        var form = document.querySelector(".map__form");
+		var map = document.querySelector(".map__google");
+        var link = document.querySelector(".promo__link");
 		if(map){
-			image-form.classList.add("form__image--remove");
+			form.classList.add("form__remove");
 		}
-		 
+        link.addEventListener("click", function(event){
+            event.preventDefault();
+            form.classList.add("form__open");
+        });
+
+		
 
 	</script>>
+
     </body>
 </html>
