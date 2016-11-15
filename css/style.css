@@ -20,8 +20,10 @@ body{
 .main-container{
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	width: 1200px;
-	margin: 0 auto;
+	margin: 0px auto;
+	box-shadow: 0px 10px 11px 1px gray;
 }
 
 .page-header__logo{
@@ -121,8 +123,10 @@ body{
 }
 
 .information__heading{
-	padding-left: 8px;
+	padding-left: 2px;
 	padding-top: 5px;
+	line-height: 25px;
+	letter-spacing: -0.3px;
 }
 .features{
 	display: flex;
@@ -165,12 +169,15 @@ body{
 	width: 800px;
 }
 .features--blue .features__heading {
-	padding-top: 6px;
+	padding-top: 9px;
 }
 .features--blue{
 	background-color: #81b3d2;
 	color: #ffffff;
 }
+.features--gray .features__item{
+	margin-top: 2px;
+} 
 .features--gray{
 	padding-bottom: 45px;
 }
@@ -269,24 +276,28 @@ h3{
 height: 100%;
 	width: 100%;
 }
-.form__image--remove{
-	background: none;
-}
+
 .map__form{
-	display: none;
+	display: flex;
 	flex-direction: column;
 	position: relative;
-	padding-top: 29px;
+	padding-top: 30px;
 	padding-bottom: 57px;
 	padding-left: 55px;
 	padding-right: 55px;
   margin-bottom: 101px;
 	width: 567px;
-	background-color: #ffffff;
+	background-color: white;
+	z-index: 2;
 }
 
-.map__form--open{
-	display: flex;
+
+.map__google{
+	position: absolute;
+  bottom: 0px; 
+  left: 0; 
+  right: 0; 
+  opacity: 0.9;
 }
 .form-index__label{
 	font-size: 14px;
@@ -307,6 +318,14 @@ height: 100%;
 	justify-content: space-between;
 	position: relative;
 }
+
+.form__date input:hover{
+  background: #ebebeb;
+}
+.form__date input:active{
+	background: #ffffff;
+	border: 2px solid #e5e5e5;
+}
 .form__calender::after{
 	content: "";
 	display: block;
@@ -315,7 +334,13 @@ height: 100%;
 	height: 25px;
 	bottom: 10px;
 	left: 428px;
-	background: url(../icons/calender-grey.png) no-repeat 0px 4px;
+	background: url(../img/spritesheet.png) no-repeat -170px -1px;
+}
+.form__calender:hover:after{
+	background: url(../img/spritesheet.png) no-repeat -140px -1px;
+}
+.form__calender:active:after{
+	background: url(../img/spritesheet.png) no-repeat -109px -1px;
 }
 .form__grow{
 	margin-left: 0px;
@@ -350,6 +375,7 @@ input[placeholder]{
 	padding-left: 14px;
 	text-transform: uppercase;
 	font-weight: bold;
+	color: black;
 }
 
 .form__adult, .form__child{
@@ -372,6 +398,12 @@ background-color: #f2f2f2;
 	font-size: 25px;
 	font-weight: bold;
 }
+.form__number:hover{
+	color: black;
+}
+.form__number:active{
+	color: #81b3d2;
+}
 .form__buttom{
 	background-color: #81b3d2;
 	color: #ffffff;
@@ -387,23 +419,27 @@ background-color: #f2f2f2;
 .footer{
 	display: flex;
 	flex-direction: row;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
 	justify-content: space-around;
-	position: relative;
-	margin-top: -120px;
+	bottom: 0px;
 	align-items: center;
-	height: 120px;
-	background-color: #ffffff;
-	opacity: 0.9;
+	background: rgba(255,255,255,0.85);
 }
 .footer__hashtag{
 	padding-left: 20px;
 	font-size: 21px;
+	font-weight: bold;
+	margin-top: -4px;
 }
 .footer__social{
 	display: flex;
 	flex-direction: row;
 	padding-left: 10px;
-	margin-left: 18px;
+	margin-left: 13px;
+	margin-top: 38px;
+	margin-bottom: 38px;
 }
 
 .footer__social-item{
@@ -442,7 +478,7 @@ background-color: #f2f2f2;
 	background: #669ec0 url(../img/spritesheet.png) -3px -116px;
 }
 .footer__copyright-text{
-	padding-right: 105px;
+	padding-right: 108px;
 	position: relative;
 }
 .footer__copyright-text:after{
@@ -455,6 +491,12 @@ background-color: #f2f2f2;
 	height: 42px;
 	background: url(../img/spritesheet.png) -212px -15px;
 }
+.footer__copyright-text:hover:after{
+	background: url(../img/spritesheet2.png) -5px -5px;
+}
+.footer__copyright-text:active:after{
+	background: url(../img/spritesheet2.png) -128px -5px;
+}
 /* Здесь стили по catalog.html */
 
 .form-catalog{
@@ -462,7 +504,7 @@ background-color: #f2f2f2;
 	flex-direction: row;
 	justify-content: center;
 	background-image: url(../img/filter_background.jpg);
-  padding-top: 13px;
+  padding-top: 15.6px;
 }
 .form-catalog__heading{
 	font-size: 16px;
@@ -638,6 +680,7 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 .finder{
 	display: flex;
 	flex-direction: row;
+	position: relative;
 	background-color: #ffffff;
 	align-items: center;
 	border-bottom: 1px solid #e5e5e5;
@@ -647,6 +690,7 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 .finder__heading{
 	font-size: 21px;
 	height: 26px;
+	letter-spacing: -0.4px;
 	margin-left: 70px;
 	margin-right: 3px;
 }
@@ -658,13 +702,15 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 .finder__items{
 	display: flex;
 	flex-direction: row;
+	margin-top: 19px;
 }
 .finder__text{
-	padding-right: 37px;
+	padding-right: 39px;
+  padding-left: 6px;
 	font-size: 12px;
 }
 .finder__item{
-	margin-left: 3px;
+	margin-left: 2px;
 	font-size: 12px;
 	line-height: 18px;
 	padding-right: 31px;
@@ -676,7 +722,7 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 }
 .finder__link{
 	color: #cacaca;
-	border-bottom:1px dashed #81b3d2;
+	border-bottom:1px dotted #81b3d2;
 }
 .finder__link:hover{
 	color: #81b3d2;
@@ -689,8 +735,7 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 	display: flex;
 	flex-direction: row;
 	position: absolute;
-	right: 88px;
-	width: 50px;
+  right: 74px;
 }
 .finder__up{
 	width: 0;
@@ -744,9 +789,16 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 	width: 780px;
 }
 .hotel__heading{
-	margin: 0;
+	letter-spacing: -0.2px;
+	margin-top: -8px;
 	font-size: 21px;
-	line-height: 13px;
+	line-height: 26px;
+}
+.hotel__link:hover{
+	color: #81b3d2;
+}
+.hotel__link:active{
+	color: #b2b2b2;
 }
 .hotel__features{
 	display: flex;
@@ -793,25 +845,30 @@ input[type="checkbox"]:disabled + .catalog-checkbox{
 	background-color: #503e33;
 	color: #857871;
 }
+.hotel__type, .hotel__price{
+	margin-top: -2.2px;
+}
 .hotel__stars{
 	display: flex;
 	flex-direction: row;
+	width: 114px; 
 	justify-content: flex-end;
-	margin-bottom: 50px;
-	margin-left: 24px;
+  margin-bottom: 57px;
 }
 .hotel__star{
   width: 17px;
   height: 18px;
-	margin-right: 7px;
+  margin-left: 5px;
+	margin-right: 2px;
 	background: url(../img/spritesheet1.png) -127px -15px;
 }
 .hotel__vote{
+	display: flex;
 	width: 111px;
 	background-color: #f2f2f2;
 	color: #666666;
 	padding: 2px 14px;
-	margin-bottom: -60px;
+	margin-top: -10px;
 }
 
 .footer-catalog{
