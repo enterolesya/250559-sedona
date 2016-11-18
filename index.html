@@ -140,17 +140,17 @@
       
       <section class="form">
 
-          <form class="map__form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="map__form form__open" method="get">
 			  
 			  <div class="form__things form__date">
               	  <label class="form-index__label">Дата заезда:</label>
-			  	  <input type="text" placeholder="24 апреля 2016">
+			  	  <input class="date" type="text" value="24 апреля 2016">
 				  <a href="#" class="form__calender"></a>
 			  </div>
 			  
 			  <div class="form__things form__date">
               	  <label class="form-index__label">Дата выезда:</label>
-				  <input type="text" placeholder="4 июля 2016">
+				  <input class="date" type="text" value="4 июля 2016">
 				  <a href="#" class="form__calender"></a>
 			  </div>
 			  <div class="form__things form__grow">
@@ -172,7 +172,7 @@
 			  	  </div>
 			  </div>
 			  <div class="form__things">
-				  <a href="catalog.html"><input class="form__buttom" type="submit" value="Найти"></a>
+				  <input class="form__buttom" type="submit" value="Найти">
 			  </div>
           </form>
 		  
@@ -182,7 +182,7 @@
       </section>
     
     
-      <footer class="footer">
+      <footer class="footer footer__index">
           
           <div class="footer__hashtag">
               <a class="hashtag__link" href="#">#Visitsedona</a>
@@ -197,7 +197,7 @@
           <div class="footer__copyright">
               <a class="footer__copyright-item footer__copyright-link" href="https://htmlacademy.ru">
 			  
-			  <span class="footer__copyright-item footer__copyright-text">Website by </span>
+			  <span class="footer__copyright-item footer__copyright-text">Website by </span> 
 			  </a>
           </div>
           
@@ -205,16 +205,21 @@
     </div>
 	<script>
         var form = document.querySelector(".map__form");
-		var map = document.querySelector(".map__google");
         var link = document.querySelector(".promo__link");
-		if(map){
-			form.classList.add("form__remove");
-		}
-        link.addEventListener("click", function(event){
-            event.preventDefault();
-            form.classList.add("form__open");
-        });
-	</script>>
+        
+		form.classList.remove("form__open");
 
+        link.addEventListener("click", function(event){
+            if(form.classList.contains("form__open")){
+                event.preventDefault();
+                form.classList.remove("form__open");
+            }else{
+                event.preventDefault();
+                form.classList.add("form__open");
+            }
+        });
+
+	</script>>
+  
     </body>
 </html>
