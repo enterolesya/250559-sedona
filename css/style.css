@@ -191,6 +191,9 @@ body {
     padding-bottom: 7px;
     text-align: center;
 }
+.features__number{
+    margin-top: -2px;
+}
 .features__item p {
     padding-top: 7px;
 }
@@ -411,7 +414,7 @@ input[type="text"] {
     background: #ffffff;
     border: 2px solid #e5e5e5;
 }
-.form__date input:focus {
+.form__date input:focus, .form__checking-item:focus {
     background: #ffffff;
     border: 2px solid #e5e5e5;
 }
@@ -422,7 +425,7 @@ input[type="text"] {
     width: 25px;
     height: 25px;
     bottom: 10px;
-    left: 428px;
+    left: 426px;
     background: url(../img/spritesheet3.png) no-repeat -116px -11px;
 }
 .form__calender:hover:after {
@@ -503,6 +506,11 @@ input[type="text"] {
     font-size: 25px;
     font-weight: bold;
 }
+input[class="form__checking-item"]{
+    font-weight: bold;
+    width: 32px;
+    padding: 7px;
+}
 .form__number:hover {
     color: black;
 }
@@ -515,7 +523,7 @@ input[type="text"] {
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
-    margin-top: 31px;
+    margin-top: 30px;
     padding-top: 16px;
     padding-bottom: 17px;
     width: 458px;
