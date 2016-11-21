@@ -17,7 +17,7 @@
           </ul>
           
           <div class="page-header__logo">
-              <a class="page-header__link" href="index.html"><img class="page-header__image" src="icons/logo.png" width="137" height="70" alt="Логотип"></a>
+              <a class="page-header__link" href="index.html"><img class="page-header__image" src="img/icons/logo.png" width="137" height="70" alt="Логотип"></a>
           </div>
       </header>
       
@@ -143,30 +143,30 @@
           <form class="map__form form__open" action="https://echo.htmlacademy.ru" method="get">
 			  
 			  <div class="form__things form__date">
-              	  <label class="form-index__label">Дата заезда:</label>
-			  	  <input class="date" type="text" value="24 апреля 2016">
+              	  <label for="date__in" class="form-index__label">Дата заезда:</label>
+			  	  <input id="date__in" class="date" type="text" value="24 апреля 2016">
 				  <a href="#" class="form__calender"></a>
 			  </div>
 			  
 			  <div class="form__things form__date">
-              	  <label class="form-index__label">Дата выезда:</label>
-				  <input class="date" type="text" value="4 июля 2016">
+              	  <label for="date__out" class="form-index__label">Дата выезда:</label>
+				  <input id="date__out" class="date" type="text" value="4 июля 2016">
 				  <a href="#" class="form__calender"></a>
 			  </div>
 			  <div class="form__things form__grow">
 			  	  <div class="form__adult">
-			  	  	  <label class="form-adult__label">Взрослые:</label>
+			  	  	  <label for="amount-adult" class="form-adult__label">Взрослые:</label>
 					  <div class="form__checking">
 					  	  <span class="form__checking-item form__number">&ndash;</span>
-					  	  <input type="text" value="2" placeholder="2" class="form__checking-item">
+					  	  <input id="amount-adult" type="text" value="2" placeholder="2" class="form__checking-item">
 					      <span class="form__checking-item form__number">+</span>
 					  </div>
 			  	  </div>
 			  	  <div class="form__child">
-			  	  	  <label class="form-child__label">Дети:</label>
+			  	  	  <label for="amount-child" class="form-child__label">Дети:</label>
 				      <div class="form__checking">
 					  	  <span class="form__checking-item form__number">&ndash;</span>
-					  	  <input type="text" value="0" class="form__checking-item">
+					  	  <input id="amount-child" type="text" value="0" class="form__checking-item">
 					      <span class="form__checking-item form__number">+</span>
 					  </div>
 			  	  </div>

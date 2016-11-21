@@ -102,7 +102,7 @@ body {
     background: #49678d;
 }
 .intro::before {
-    background: url(../icons/teeth.png);
+    background: url(../img/icons/teeth.png);
     content: "";
     display: block;
     position: absolute;
@@ -111,7 +111,7 @@ body {
     height: 57px;
 }
 .intro::after {
-    background: url(../icons/welcome_to_sedona.png) no-repeat;
+    background: url(../img/icons/welcome_to_sedona.png) no-repeat;
     content: "";
     display: block;
     position: absolute;
@@ -227,12 +227,12 @@ body {
     padding-top: 47px;
     content: "";
     display: block;
-    background: url(../img/spritesheet.png) no-repeat;
+    background: url(../img/sprite.png) no-repeat;
 }
 .advantages__image-house:before {
     width: 75px;
     height: 55px;
-    background-position: -119px -96px;
+    background-position: -134px -111px;
 }
 .advantages__image-house {
     margin-left: 5px;
@@ -242,7 +242,7 @@ body {
     margin-left: -17px;
     width: 76px;
     height: 55px;
-    background-position: -15px -15px;
+    background-position: -30px -30px;
 }
 .advantages__image-food {
     margin-left: 17px;
@@ -252,7 +252,7 @@ body {
     margin-left: 19px;
     width: 64px;
     height: 60px;
-    background-position: -224px -84px;
+    background-position: -239px -99px;
 }
 .advantages__image-surprise {
     margin-left: 5px;
@@ -418,6 +418,9 @@ input[type="text"] {
     background: #ffffff;
     border: 2px solid #e5e5e5;
 }
+input[type="text"]:focus { 
+    outline: none; 
+}
 .form__calender::after {
     content: "";
     display: block;
@@ -426,13 +429,13 @@ input[type="text"] {
     height: 25px;
     bottom: 10px;
     left: 426px;
-    background: url(../img/spritesheet3.png) no-repeat -116px -11px;
+    background: url(../img/sprite.png) no-repeat -511px -105px;
 }
 .form__calender:hover:after {
-    background: url(../img/spritesheet3.png) no-repeat -14px -11px;
+    background: url(../img/sprite.png) no-repeat -460px -105px;
 }
 .form__calender:active:after {
-    background: url(../img/spritesheet3.png) no-repeat -66px -11px;
+    background: url(../img/sprite.png) no-repeat -409px -105px;
 }
 .form__grow {
     margin-left: 0px;
@@ -584,20 +587,16 @@ input[class="form__checking-item"]{
     justify-content: center;
 }
 .footer__social-item--fb {
-    background: #81b3d2 url(../img/spritesheet.png) -102px -35px;
+    background: #81b3d2 url(../img/sprite.png) -117px -51px;
 }
 .footer__social-item--fb:hover {
-    background: #669ec0 url(../img/spritesheet.png) -102px -35px;
-}
-.footer__social-item--fb:active {
-    background-color: #5496bd;
-    background-image: rgba(255, 255, 255, 0.8) url(../img/spritesheet.png) -102px -35px;
+    background: #669ec0 url(../img/sprite.png) -117px -51px;
 }
 .footer__social-item--tw {
-    background: #81b3d2 url(../img/spritesheet.png) -304px -70px;
+    background: #81b3d2 url(../img/sprite.png) -318px -84px;
 }
 .footer__social-item--tw:hover {
-    background: #669ec0 url(../img/spritesheet.png) -304px -70px;
+    background: #669ec0 url(../img/sprite.png) -318px -84px;
 }
 .footer__social-item--tw:active,
 .footer__social-item--fb:active,
@@ -605,10 +604,10 @@ input[class="form__checking-item"]{
     box-shadow: inset 0 0 40px rgba(84, 150, 189, 0.9);
 }
 .footer__social-item--yt {
-    background: #81b3d2 url(../img/spritesheet.png) -1px -115px;
+    background: #81b3d2 url(../img/sprite.png) -17px -129px;
 }
 .footer__social-item--yt:hover {
-    background: #669ec0 url(../img/spritesheet.png) -1px -115px;
+    background: #669ec0 url(../img/sprite.png) -17px -129px;
 }
 .footer__copyright-text {
     margin-right: 112px;
@@ -622,13 +621,13 @@ input[class="form__checking-item"]{
     left: 80px;
     width: 115px;
     height: 42px;
-    background: url(../img/spritesheet.png) -212px -15px;
+    background: url(../img/sprite.png) -644px -20px;
 }
 .footer__copyright-text:hover:after {
-    background: url(../img/spritesheet2.png) -5px -5px;
+    background: url(../img/sprite.png) -398px -20px;
 }
 .footer__copyright-text:active:after {
-    background: url(../img/spritesheet2.png) -128px -5px;
+    background: url(../img/sprite.png) -521px -20px;
 }
 /* Здесь стили по catalog.html */
 
@@ -673,16 +672,16 @@ input[type="checkbox"] + .catalog-checkbox {
     height: 22px;
     width: 25px;
     margin: 3px 15px -5px 0px;
-    background: url(../img/spritesheet1.png) no-repeat -67px -67px;
+    background: url(../img/sprite.png) no-repeat -82px -295px;
 }
 input[type="checkbox"]:checked + .catalog-checkbox {
-    background-position: -15px -15px;
+    background-position: -30px -243px;
 }
 input[type="checkbox"]:checked:disabled + .catalog-checkbox {
-    background-position: -71px -15px;
+    background-position: -86px -243px;
 }
 input[type="checkbox"]:disabled + .catalog-checkbox {
-    background-position: -15px -67px;
+    background-position: -30px -295px;
 }
 .form-catalog__item {
     display: -webkit-box;
@@ -922,7 +921,7 @@ input.price {
 .finder__down--active {
     border-top: 10px solid #81b3d2;
 }
-finder__down--active:hover {
+.finder__down--active:hover {
     border-top: 10px solid #81b3d2;
 }
 .finder__up:hover {
@@ -1070,7 +1069,7 @@ finder__down--active:hover {
     height: 18px;
     margin-left: 5px;
     margin-right: 2px;
-    background: url(../img/spritesheet1.png) -127px -15px;
+    background: url(../img/sprite.png) -142px -243px;
 }
 .hotel__vote {
     display: -webkit-box;
@@ -1113,6 +1112,7 @@ img {
     width: auto;
     height: auto;
 }
+
 @-webkit-keyframes existed {
     0% {
         opacity: 0;
